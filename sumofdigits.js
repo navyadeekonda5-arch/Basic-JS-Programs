@@ -1,7 +1,7 @@
 var a= 345;
 var sum=0;
-for (let i=a;i>0;i=Math.floor(i/10)){
-    let lastDigit=i%10;
-    sum=sum+lastDigit;
+while(a>0){
+    sum+=a%10;
+    a=Math.floor(a/10);
 }
-console.log(sum);
+console.log(sum)
